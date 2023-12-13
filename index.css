@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+--paleblue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+button{
+    border: none;
+}
+.purple-btn{
+    background-color: var(--Bright-blue);
+    padding:10px 30px;
+    box-shadow: 9px 19px 14px -8px rgba(165, 165, 165, 0.719);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn-light{
+    margin-top: 30px;
+    color: var(--Desaturatedblue);
+    background-color: white;
+    font-weight: 900;
+
+}
+body{
+    margin: 0;
+    background-color: var(--paleblue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    margin: 0 auto;
+    position: relative;
+    width: 1134px;
+    height: 100vh;
+
+}
+.container{
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    box-shadow: 9px 19px 14px -8px rgba(165, 165, 165, 0.384);
+}
+.container .head img{
+    width: 400px;
+    border-radius: 20px 20px 0px 0px;
+}
+.container .best{
+    padding: 30px;
+}
+.container .best p{
+    color: var(--Desaturatedblue);
+    margin-bottom: 20px;
+}
+.container .best h3{
+    font-weight: 900;
+    color: var(--Darkblue);
+    font-size: 24px;
+}
+.container .best .price-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Verypaleblue);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.container .best .price-card .price{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.container .best .p-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 700;
+}
+.container .best span{
+    color: var(--Desaturatedblue);
+    font-weight: 400;
+}
+.container .best .btn{
+    display: flex;
+    flex-direction: column;
+}
